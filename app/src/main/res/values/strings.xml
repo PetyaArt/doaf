@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">doaf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover">Discover</string>
+    <string name="home">Home</string>
+    <string name="url">https://video-weaver.hel01.hls.ttvnw.net/v1/playlist/CqoDz2sU2cOsS9BjryltPaygxphQPBTDHaGaTekeKVShfJa7mRY0YlhNX71cEbY_KJ2Tf96sYLICzrdoxzGEJbsyE8tLNvSsqJjMzKfE5Qhff-PLeRmUVZfLmx2Ss5HX7AaWmVx0M7bxXnL07aew_3Iwj9XetlLhnk8zds0dUOi3QcFh8T9LuY32JmJ6wrc8yYOQfFhwrClVWQLNe71EIdQ32fC9sQ9kpGY9QbM9L-5aW9Ojn-5GByzHSKXoLeVvD5a3JN01XecXWnmC4uRwem6RyYQdPCF3PuKLWb8ZpeH3sc8dFN_8W9v_3JHAP43DdXjDVSCvRJMA3rSMZFS1vnM6Hc38kSv99okpSzJ_CHgXShGbTsJ6g3br7DSq7GEGJXhghBSZqrk20sghSTLQz8QELIt9K6PJQP-h4M8fLq7nP3JK54ZkawJz6Fg_h5IYpEl-OTFC5KgFLQfQAUuDEQ4nj1G8Yki2x7e0M68FbPK3QHdamaRqVsuPv-_VIMxykSfSE7lCUAEnobNpM92fLqPRPZzf6IFeftORQ7Bt1wIH3Y7bho9gzBlAGkzJEhBMMH-ipkWrFx2QdabXwSFwGgyV6ZkFpi284DHL4U0.m3u8</string>
+</resources>
