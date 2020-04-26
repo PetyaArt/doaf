@@ -15,4 +15,13 @@ object NetworkRepository {
 
     val twitchRepository = retrofit.create(TwitchRepository::class.java)
 
+
+    private val retrofit2 = Retrofit.Builder()
+        .baseUrl("http://161.35.72.139/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .addCallAdapterFactory(RxJava3CallAdapterFactory.createWithScheduler(Schedulers.io()))
+        .build()
+
+    val streamRepository = retrofit2.create(TwitchStreamRepository::class.java)
+
 }

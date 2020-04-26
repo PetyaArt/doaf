@@ -12,11 +12,8 @@ import com.doaf.app.App
 import com.doaf.presentation.OnItemClickListener
 import com.doaf.presentation.Screens
 import com.doaf.presentation.ViewState
-import com.doaf.presentation.main_screen.MainActivity
 import com.doaf.presentation.streams_screen.StreamsAdapter
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_streams.*
-import ru.terrakok.cicerone.Screen
 
 class HomeFragment : Fragment(), ViewState<HomeViewState>, OnItemClickListener {
 
@@ -55,8 +52,7 @@ class HomeFragment : Fragment(), ViewState<HomeViewState>, OnItemClickListener {
     }
 
     override fun itemClick(position: Int) {
-        (activity as MainActivity).bottom_sheet.visibility = View.GONE
-        App.application.getRouter().navigateTo(Screens.StreamScreen)
+        App.application.getRouter().navigateTo(Screens.StreamScreen(adapter.streams.data[position].userName))
     }
 
     override fun render(state: HomeViewState) {

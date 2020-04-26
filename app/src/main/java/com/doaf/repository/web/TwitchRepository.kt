@@ -5,7 +5,6 @@ import com.doaf.entities.Streams
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 import retrofit2.http.Headers
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface TwitchRepository {

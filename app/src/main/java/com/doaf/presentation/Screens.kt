@@ -20,8 +20,8 @@ object Screens {
         override fun getFragment() = StreamsFragment.newInstance(gameID)
     }
 
-    object StreamScreen : SupportAppScreen() {
-        override fun getFragment() = StreamFragment()
+    data class StreamScreen(val nickname: String) : SupportAppScreen() {
+        override fun getFragment() = StreamFragment.newInstance(nickname)
     }
 
 }

@@ -1,19 +1,15 @@
 package com.doaf.presentation.discover_screen
 
 import com.doaf.app.App
-import com.doaf.entities.Games
 import com.doaf.presentation.Screens
 import com.doaf.repository.web.NetworkRepository
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.schedulers.Schedulers
 import io.reactivex.rxjava3.subjects.PublishSubject
 
 class DiscoverPresenter(private var view: DiscoverFragment?) {
-
-    private val gameIdSubject = PublishSubject.create<Int>()
+    
     private val nextListGamesSubject = PublishSubject.create<String>()
     private val listGamesSubject = PublishSubject.create<Unit>()
 

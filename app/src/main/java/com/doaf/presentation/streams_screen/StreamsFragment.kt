@@ -5,13 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.doaf.R
+import com.doaf.app.App
 import com.doaf.presentation.OnItemClickListener
+import com.doaf.presentation.Screens
 import com.doaf.presentation.ViewState
-import kotlinx.android.synthetic.main.fragment_discover.*
 import kotlinx.android.synthetic.main.fragment_streams.*
 
 class StreamsFragment : Fragment(), ViewState<StreamsViewState>, OnItemClickListener {
@@ -65,7 +65,7 @@ class StreamsFragment : Fragment(), ViewState<StreamsViewState>, OnItemClickList
     }
 
     override fun itemClick(position: Int) {
-
+        App.application.getRouter().navigateTo(Screens.StreamScreen(adapter.streams.data[position].userName))
     }
 
     override fun render(state: StreamsViewState) {
